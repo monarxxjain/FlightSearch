@@ -16,7 +16,7 @@ const handleFilter = (filters) => {
     const minPrice = parseFloat(filters.price);
     filteredResults = filteredResults.filter((offering) => {
       const totalPrice = offering.ProductBrandOptions[0].ProductBrandOffering[0].Price.TotalPrice;
-      return totalPrice >= minPrice;
+      return totalPrice <= minPrice;
     });
   }
 
@@ -59,8 +59,8 @@ const handleSort = (sortCriteria) => {
 };
 
   return (
-    <div className="App">
-      <h1>Travel List</h1>
+    <div className="flex flex-col gap-5 p-10">
+      <h1 className='text-4xl'>Travel List</h1>
       <FilterAndSort
         travelData={travelData}
         onFilter={handleFilter}

@@ -19,23 +19,24 @@ const FilterAndSort = ({ travelData, onFilter, onSort }) => {
   };
 
   return (
-    <div>
-      <h2>Filter and Sort</h2>
+    <div className='flex flex-col gap-3 p-4'>
+      <h2 className='text-3xl'>Filter and Sort</h2>
       <div>
-        <label>
+        <label className='flex'>
           Filter by Price:
           <input
             type="text"
             name="price"
             value={filters.price}
             onChange={handleFilterChange}
+            className='flex border-black border ms-3 rounded hover:bg-gray-300 px-2'
           />
         </label>
       </div>
       <div>
-        <label>
+        <label className='flex'>
           Sort by:
-          <select onChange={handleSortChange}>
+          <select onChange={handleSortChange} className='flex border-black border ms-3 rounded hover:bg-gray-300'>
             <option value="">None</option>
             <option value="price">Price</option>
             <option value="departureTime">Departure Time</option>
