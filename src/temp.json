@@ -158,6 +158,221 @@
                         "AvailabilitySourceCode": "S"
                     }
                 ]
+            },
+            {
+                "@type": "ReferenceListProduct",
+                "Product": [
+                    {
+                        "@type": "ProductAir",
+                        "totalDuration": "PT48H50M",
+                        "id": "p0",
+                        "Quantity": 9,
+                        "FlightSegment": [
+                            {
+                                "@type": "FlightSegment",
+                                "sequence": 1,
+                                "connectionDuration": "PT20H40M",
+                                "boundFlightsInd": true,
+                                "Flight": {
+                                    "@type": "FlightID",
+                                    "FlightRef": "s17"
+                                }
+                            },
+                            {
+                                "@type": "FlightSegment",
+                                "sequence": 2,
+                                "connectionDuration": "PT3H30M",
+                                "boundFlightsInd": true,
+                                "Flight": {
+                                    "@type": "FlightID",
+                                    "FlightRef": "s18"
+                                }
+                            },
+                            {
+                                "@type": "FlightSegment",
+                                "sequence": 3,
+                                "Flight": {
+                                    "@type": "FlightID",
+                                    "FlightRef": "s19"
+                                }
+                            }
+                        ],
+                        "PassengerFlight": [
+                            {
+                                "@type": "PassengerFlight",
+                                "passengerQuantity": 1,
+                                "passengerTypeCode": "ADT",
+                                "FlightProduct": [
+                                    {
+                                        "@type": "FlightProduct",
+                                        "segmentSequence": [
+                                            1,
+                                            2
+                                        ],
+                                        "classOfService": "P",
+                                        "cabin": "Economy",
+                                        "fareBasisCode": "PPX2YY",
+                                        "fareType": "PublicFare",
+                                        "fareTypeCode": "XPX"
+                                    },
+                                    {
+                                        "@type": "FlightProduct",
+                                        "segmentSequence": [
+                                            3
+                                        ],
+                                        "classOfService": "I",
+                                        "cabin": "Economy",
+                                        "fareBasisCode": "PPX2YY",
+                                        "fareType": "PublicFare",
+                                        "fareTypeCode": "XPX"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "@type": "ReferenceListTermsAndConditions",
+                "TermsAndConditions": [
+                    {
+                        "@type": "TermsAndConditionsAir",
+                        "id": "T0",
+                        "BaggageAllowance": [
+                            {
+                                "@type": "BaggageAllowanceDetail",
+                                "url": "http://VIEWTRIP.TRAVELPORT.COM/BAGGAGEPOLICY/TK",
+                                "passengerTypeCodes": [
+                                    "ADT"
+                                ],
+                                "baggageType": "FirstCheckedBag",
+                                "ProductRef": [
+                                    "p0",
+                                    "p1"
+                                ],
+                                "BaggageItem": [
+                                    {
+                                        "@type": "BaggageItem",
+                                        "quantity": 1,
+                                        "BaggageFee": {
+                                            "code": "AUD",
+                                            "approximateInd": true,
+                                            "value": 0
+                                        },
+                                        "Text": "UPTO50LB/23KG AND UPTO62LI/158LCM"
+                                    }
+                                ],
+                                "SegmentSequenceList": [
+                                    1,
+                                    2,
+                                    3
+                                ],
+                                "Text": [
+                                    "2P"
+                                ]
+                            }
+                        ],
+                        "ValidatingAirline": [
+                            {
+                                "@type": "ValidatingAirline",
+                                "ValidatingAirline": "TK"
+                            }
+                        ],
+                        "TicketingAgency": [
+                            {
+                                "@type": "TicketingAgency",
+                                "Code": "5Y03",
+                                "ProductRef": [
+                                    "p0",
+                                    "p1"
+                                ]
+                            }
+                        ],
+                        "PaymentTimeLimit": "2023-10-28T23:59:00Z",
+                        "Penalties": [
+                            {
+                                "@type": "Penalties",
+                                "Change": [
+                                    {
+                                        "@type": "ChangePermitted",
+                                        "penaltyTypes": [
+                                            "Anytime"
+                                        ],
+                                        "PenaltyAppliesTo": "PerTicket",
+                                        "Penalty": [
+                                            {
+                                                "@type": "PenaltyAmount",
+                                                "Amount": {
+                                                    "code": "AUD",
+                                                    "minorUnit": 2,
+                                                    "value": 62
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "Cancel": [
+                                    {
+                                        "@type": "CancelPermitted",
+                                        "penaltyTypes": [
+                                            "BeforeDeparture"
+                                        ],
+                                        "PenaltyAppliesTo": "PerTicket",
+                                        "Penalty": [
+                                            {
+                                                "@type": "PenaltyAmount",
+                                                "Amount": {
+                                                    "code": "AUD",
+                                                    "minorUnit": 2,
+                                                    "value": 124
+                                                }
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "@type": "ReferenceListBrand",
+                "Brand": [
+                    {
+                        "@type": "Brand",
+                        "name": "Economy Essential",
+                        "tier": 5,
+                        "shelfNumbers": [],
+                        "id": "b2",
+                        "Identifier": {
+                            "value": "1203987"
+                        },
+                        "BrandAttribute": [
+                            {
+                                "@type": "BrandAttribute",
+                                "classification": "Refund",
+                                "inclusion": "Chargeable"
+                            },
+                            {
+                                "@type": "BrandAttribute",
+                                "classification": "Rebooking",
+                                "inclusion": "Chargeable"
+                            }
+                        ],
+                        "AdditionalBrandAttribute": [
+                            {
+                                "@type": "AdditionalBrandAttribute",
+                                "Classification": "Priority CheckIn",
+                                "Inclusion": "Not Offered"
+                            },
+                            {
+                                "@type": "AdditionalBrandAttribute",
+                                "Classification": "Mileage Accrual",
+                                "Inclusion": "Included"
+                            }
+                        ]
+                    }
+                ]
             }
         ]
     }
