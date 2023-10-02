@@ -1,0 +1,164 @@
+{
+    "CatalogProductOfferingsResponse": {
+        "@type": "CatalogProductOfferingsResponse",
+        "transactionId": "036d754e-0213-4b02-8669-8e504c85b3fd:ppnd1002",
+        "CatalogProductOfferings": {
+            "@type": "CatalogProductOfferings",
+            "CatalogProductOffering": [
+                {
+                    "@type": "CatalogProductOffering",
+                    "sequence": 1,
+                    "id": "o1",
+                    "Departure": "LOS",
+                    "Arrival": "MEL",
+                    "ProductBrandOptions": [
+                        {
+                            "@type": "ProductBrandOptions",
+                            "flightRefs": [
+                                "s17",
+                                "s18",
+                                "s19"
+                            ],
+                            "ProductBrandOffering": [
+                                {
+                                    "@type": "ProductBrandOffering",
+                                    "Price": {
+                                        "@type": "PriceDetail",
+                                        "CurrencyCode": {
+                                            "decimalPlace": 2,
+                                            "value": "AUD"
+                                        },
+                                        "Base": 669,
+                                        "TotalTaxes": 679.13,
+                                        "TotalFees": 0,
+                                        "TotalPrice": 1348.13,
+                                        "PriceBreakdown": [
+                                            {
+                                                "@type": "PriceBreakdownAir",
+                                                "quantity": 1,
+                                                "requestedPassengerType": "ADT",
+                                                "Amount": {
+                                                    "@type": "Amount",
+                                                    "CurrencyCode": {
+                                                        "decimalPlace": 2,
+                                                        "value": "AUD"
+                                                    },
+                                                    "Base": 669,
+                                                    "Taxes": {
+                                                        "@type": "TaxesDetail",
+                                                        "TotalTaxes": 679.13,
+                                                        "Tax": [
+                                                            {
+                                                                "taxCode": "WY",
+                                                                "value": 25.13
+                                                            },
+                                                            {
+                                                                "taxCode": "NG",
+                                                                "value": 53
+                                                            }
+                                                        ]
+                                                    },
+                                                    "Fees": {
+                                                        "@type": "FeesDetail",
+                                                        "TotalFees": 0
+                                                    },
+                                                    "Total": 1348.13
+                                                }
+                                            }
+                                        ]
+                                    },
+                                    "Product": [
+                                        {
+                                            "@type": "ProductID",
+                                            "productRef": "p0"
+                                        }
+                                    ],
+                                    "TermsAndConditions": {
+                                        "@type": "TermsAndConditionsID",
+                                        "termsAndConditionsRef": "T0"
+                                    },
+                                    "CombinabilityCode": [
+                                        "j1"
+                                    ],
+                                    "BestCombinablePrice": {
+                                        "@type": "BestCombinablePriceDetail",
+                                        "CurrencyCode": {
+                                            "decimalPlace": 2,
+                                            "value": "AUD"
+                                        },
+                                        "Base": 1276,
+                                        "TotalTaxes": 1230.27,
+                                        "TotalPrice": 2506.27,
+                                        "PriceBreakdown": [
+                                            {
+                                                "@type": "PriceBreakdownAir",
+                                                "quantity": 1,
+                                                "requestedPassengerType": "ADT",
+                                                "Amount": {
+                                                    "@type": "Amount",
+                                                    "CurrencyCode": {
+                                                        "decimalPlace": 2,
+                                                        "value": "AUD"
+                                                    },
+                                                    "Base": 1276,
+                                                    "Taxes": {
+                                                        "@type": "TaxesDetail",
+                                                        "TotalTaxes": 1230.27,
+                                                        "Tax": [
+                                                            {
+                                                                "taxCode": "AU",
+                                                                "value": 60
+                                                            },
+                                                            {
+                                                                "taxCode": "WG",
+                                                                "value": 5.71
+                                                            }
+                                                        ]
+                                                    },
+                                                    "Total": 2506.27
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "Result": {
+            "@type": "Result"
+        },
+        "ReferenceList": [
+            {
+                "@type": "ReferenceListFlight",
+                "Flight": [
+                    {
+                        "@type": "FlightDetail",
+                        "distance": 3434,
+                        "duration": "PT8H55M",
+                        "carrier": "QR",
+                        "number": "1408",
+                        "equipment": "788",
+                        "id": "s1",
+                        "Departure": {
+                            "@type": "DepartureDetail",
+                            "terminal": "I",
+                            "location": "LOS",
+                            "date": "2023-10-28",
+                            "time": "11:50:00"
+                        },
+                        "Arrival": {
+                            "@type": "ArrivalDetail",
+                            "location": "DOH",
+                            "date": "2023-10-28",
+                            "time": "22:45:00"
+                        },
+                        "AvailabilitySourceCode": "S"
+                    }
+                ]
+            }
+        ]
+    }
+}
